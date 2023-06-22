@@ -3,3 +3,8 @@
 //true
 const name= 'hari'
 const allUsers = ['hari','shyam','thakur']
+if (allUsers.includes('hari')) {
+    console.log('The array contains Hari.');
+  } else {
+    console.log('The array does not contain Hari.');
+  }
