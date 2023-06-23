@@ -48,7 +48,7 @@ let sum3=0;
 //first step element lai access garne for eg [4,5], [5,7] ,etc. 
 for(i=0;i<newArr.length;i++){
   // console.log(newArr[i])
-  tempArr1= newArr1[i]
+  let tempArr1= newArr1[i]
   for(j=0;j<tempArr1.length;j++){
     // console.log(tempArr1[j])
     if(tempArr1[j]%2!=0){
