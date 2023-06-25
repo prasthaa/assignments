@@ -72,3 +72,11 @@ console.log(temp)
 myDetails.map((item)=>{
   return(item.id)
 })
+
+let score=0
+userDetails.map((item)=>{
+  for(let i=0;i<userDetails.length;i++){
+  item.score=item.score + item.marks[i]
+  }
+})
+console.log(userDetails)
