@@ -58,3 +58,12 @@ for(i=0;i<newArr.length;i++){
   }
 }
 console.log(sum3)
+
+
+// return only array of ids: expected output  [3,5,6]
+
+let temp=[]
+myDetails.map((item)=>{
+  temp.push(item.id)
+})
+console.log(temp)
