@@ -92,4 +92,20 @@ function test(dist,unitKm){
   test(rideDetails.distance,rideDetails.unitKmPrice)
   console.log(b)
   
-  
+  // / calc the percentage he scored in exams out of total score
+const obj ={
+  computer: 42,
+  maths: 42,
+  science: 50
+}
+
+//func maa sadhai return garna parcha
+function score(a,b,c){
+  let sum = a+b+c
+  let percentage=(sum/150)*100
+  let p= percentage.toFixed(2)
+  return p
+}
+score(obj.computer,obj.maths,obj.science)
+  console.log(p)
+
