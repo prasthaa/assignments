@@ -80,3 +80,16 @@ userDetails.map((item)=>{
   }
 })
 console.log(userDetails)
+
+// write a js function that  can  calculates the final price
+function test(dist,unitKm){
+  const D= dist.slice(0,2)
+  const a =Number(D)
+  // console.log(dist,unitKm)
+   const b= a *unitKm
+  return b
+  }
+  test(rideDetails.distance,rideDetails.unitKmPrice)
+  console.log(b)
+  
+  
