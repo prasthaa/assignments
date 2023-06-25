@@ -67,3 +67,8 @@ myDetails.map((item)=>{
   temp.push(item.id)
 })
 console.log(temp)
+
+//next method:
+myDetails.map((item)=>{
+  return(item.id)
+})
