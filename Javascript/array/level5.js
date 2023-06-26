@@ -19,13 +19,13 @@ console.log(sum1)
 //remove from array if duplicate
 const users=['hari','shyam','hari']
 
-let tempArr=[]
+let tempArr2=[]
 users.map((item)=> {
 if(!tempArr.includes(item)){
-  tempArr.push(item)
+  tempArr2.push(item)
 }
 })
- console.log(tempArr) 
+ console.log(tempArr2) 
  
 
 
@@ -59,7 +59,88 @@ for(i=0;i<newArr.length;i++){
 }
 console.log(sum3)
 
+const myDetails = [
+  {id:3, name: 'hari'},
+  {id:5, name: 'shyam'},
+  {id:6, name: 'gopal'},
+]
+let newArr5=[]
+myDetails.map((item)=>{
+newArr5.push(item.id)
+})
+console.log(newArr5)
+// return only array of ids: expected output  [3,5,6]
 
+
+// return only array of ids: expected output  [3,5,6]
+
+let temp3=[]
+myDetails.map((item)=>{
+  temp3.push(item.id)
+})
+console.log(temp3)
+
+//next method:
+myDetails.map((item)=>{
+  return(item.id)
+})
+
+let score1=0
+userDetails.map((item)=>{
+  for(let i=0;i<userDetails.length;i++){
+  item.score1=item.score1 + item.marks[i]
+  }
+})
+console.log(userDetails)
+  // / calc the percentage he scored in exams out of total score
+const obj ={
+  computer: 42,
+  maths: 42,
+  science: 50
+}
+
+
+
+  // ['gopal','krish']
+const arr3 = ['ram','shyam','hari']
+const arr4 = ['ram','shyam','hari','gopal','krish']
+
+let temp1Arr=[]
+arr4.forEach((item,id)=>{
+    if (!arr3.includes(item)) {
+      temp1Arr.push(item)
+  }
+})
+  console.log(temp1Arr)
+
+
+// const arr1 = ['ram','shyam','hari']
+// const arr2 = ['ram','shyam','hari','gopal','krish']
+
+// // ['gopal','krish']
+let tempArr=[]
+arr2.filter((item,id)=>{
+    if (!arr1.includes(item)) {
+      tempArr.push(item)
+      //  or return item 
+  }
+})
+  console.log(tempArr)
+
+var arr1 = [1,2,3,4],
+    arr2 = [2,4],
+    res = arr1.filter(item => !arr2.includes(item));
+console.log(res);
+
+  
+
+
+// const myDetails = [
+//     {id:3, name: 'hari'},
+//     {id:5, name: 'shyam'},
+//     {id:6, name: 'gopal'},
+//   ]
+  
 // return only array of ids: expected output  [3,5,6]
 
 let temp=[]
@@ -68,44 +149,26 @@ myDetails.map((item)=>{
 })
 console.log(temp)
 
-//next method:
-myDetails.map((item)=>{
-  return(item.id)
-})
 
-let score=0
-userDetails.map((item)=>{
-  for(let i=0;i<userDetails.length;i++){
-  item.score=item.score + item.marks[i]
-  }
-})
-console.log(userDetails)
-
-// write a js function that  can  calculates the final price
-function test(dist,unitKm){
-  const D= dist.slice(0,2)
-  const a =Number(D)
-  // console.log(dist,unitKm)
-   const b= a *unitKm
-  return b
-  }
-  test(rideDetails.distance,rideDetails.unitKmPrice)
-  console.log(b)
+// / const userDetails= [
+  //     {score: 0, name:'hari', marks: [10,3,23]},
+  //     {score: 0, name:'shyam', marks: [50,23,23]},
+  //     {score: 0, name:'shyam',marks: [20,13,43]},
+  // ]
+  //loop over the arr of objects and calculate total score, expected output is:
   
-  // / calc the percentage he scored in exams out of total score
-const obj ={
-  computer: 42,
-  maths: 42,
-  science: 50
-}
-
-//func maa sadhai return garna parcha
-function score(a,b,c){
-  let sum = a+b+c
-  let percentage=(sum/150)*100
-  let p= percentage.toFixed(2)
-  return p
-}
-score(obj.computer,obj.maths,obj.science)
-  console.log(p)
-
+  // [
+  //     {score: 36, name:'hari', marks: [10,3,23]},
+  //     {score: 96, name:'shyam', marks: [50,23,23]},
+  //     {score: 76, name:'shyam',marks: [20,13,43]},
+  // ]
+  
+  let score=0
+  userDetails.map((item)=>{
+    for(let i=0;i<userDetails.length;i++){
+    item.score=item.score + item.marks[i]
+    }
+  })
+  console.log(userDetails)
+  
+  

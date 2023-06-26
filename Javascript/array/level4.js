@@ -16,3 +16,22 @@ allUsers.map((item, id) => {
     }
 })
 console.log(sum) 
+
+
+//to check how many hari  are present
+
+const name1= 'hari'
+const allUsers1 = ['hari','shyam','thakuri']
+
+let count =0;
+for (let  i=0; i<allUsers1.length;i++){
+  if (allUsers[i]==name1){
+    count=count+1;
+  }
+}
+if(count>=2){
+  console.log("duplicate exists",count)
+}
+else{
+  console.log("duplicate doesnt exist")
+}
